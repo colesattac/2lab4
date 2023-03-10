@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TSN_DEMO_12_Browser</string>
+    <string name="search_hint">Поиск</string>
+    <string name="home_page">https://tou.edu.kz/ru</string>
+    <string name="cabinet_page">https://tou.edu.kz/student_cabinet/</string>
+    <string name="contacts_page">https://tou.edu.kz/ru/?option=com_content&amp;view=callcenter</string>
+    <string name="dot_page">https://dot.tou.edu.kz/</string>
+    <string name="cos_page">https://cos.tou.edu.kz/</string>
+    <string name="kuda_otpravit">Поделиться</string>
+    <string name="iz">из</string>
+    <string name="ne_naideno">Не найдено !</string>
+</resources>
