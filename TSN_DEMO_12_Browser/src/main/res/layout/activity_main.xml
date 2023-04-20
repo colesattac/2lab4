@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainToolLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/ic_action_back" />
+
+        <ImageButton
+            android:id="@+id/forwardButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/backButton"
+            app:srcCompat="@drawable/ic_action_forward" />
+
+        <ImageButton
+            android:id="@+id/refreshButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/forwardButton"
+            app:srcCompat="@drawable/ic_action_refresh" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/refreshButton"
+            app:srcCompat="@drawable/ic_action_home" />
+
+        <ImageButton
+            android:id="@+id/dotButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:alpha="0.8"
+            app:srcCompat="@drawable/ic_baseline_school_24" />
+
+        <ImageButton
+            android:id="@+id/cabinetButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@id/dotButton"
+            android:alpha="0.8"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+        <ImageButton
+            android:id="@+id/contactsButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@id/cabinetButton"
+            android:alpha="0.8"
+            app:srcCompat="@drawable/ic_baseline_contacts_24" />
+
+        <ImageButton
+            android:id="@+id/cosButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@id/contactsButton"
+            android:alpha="0.8"
+            app:srcCompat="@drawable/ic_baseline_help_center_24" />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/urlText"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="45dp"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_toLeftOf="@+id/loadButton"-->
+        <!--            android:layout_toRightOf="@id/homeButton"-->
+        <!--            android:inputType="text"-->
+        <!--            android:paddingTop="10sp"-->
+        <!--            android:text="@string/home_page"-->
+        <!--            android:textColor="@color/textColor"-->
+
+        <!--            />-->
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/mainToolLayout" />
+
+    <RelativeLayout
+        android:id="@+id/searchToolLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"></RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchToolLayout"
+        android:layout_alignParentBottom="true" ></WebView>
+
+    </RelativeLayout>
+
